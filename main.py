@@ -10,7 +10,7 @@ while True:
     if CPU == "R":
         CPU = "(Rock)"
     elif CPU == "P":
-        Player = "(Paper)"
+        CPU = "(Paper)"
     elif CPU == "S":
         CPU = "(Scissors)"
     # prompt Player to pick an option between "R", "P" or "S"
@@ -33,16 +33,16 @@ while True:
         print("TIE")
     
     elif Player == "Rock" and CPU == "Scissors":
-       print("Rock beats Scissors! You win!")
+       print("Rock beats Scissors! Player wins!")
         
     elif Player == "Paper" and CPU == "Rock":
-       print("Paper beats Rock! You win!")
+       print("Paper beats Rock! Player wins!")
       
     elif Player == "Scissors" and CPU == "Paper":
-       print("Scissors beats Paper! You win!")
+       print("Scissors beats Paper! Player wins!")
    
     else:
-       print("You lost")
+       print("CPU wins!")
        break
        
    
