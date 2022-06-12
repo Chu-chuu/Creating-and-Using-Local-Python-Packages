@@ -22,6 +22,7 @@ while True:
         Player = "(Paper)"
     elif Player == "S":
         Player = "(Scissors)"
+
     elif Player not in choices:
         print("Error! Please select a valid response")
         continue
@@ -32,13 +33,13 @@ while True:
     if Player == CPU:
         print("TIE")
     
-    elif Player == "Rock" and CPU == "Scissors":
+    elif Player == "(Rock)" and CPU == "(Scissors)":
        print("Rock beats Scissors! Player wins!")
         
-    elif Player == "Paper" and CPU == "Rock":
+    elif Player == "(Paper)" and CPU == "(Rock)":
        print("Paper beats Rock! Player wins!")
       
-    elif Player == "Scissors" and CPU == "Paper":
+    elif Player == "(Scissors)" and CPU == "(Paper)":
        print("Scissors beats Paper! Player wins!")
    
     else:
